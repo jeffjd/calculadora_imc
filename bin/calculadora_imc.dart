@@ -1,5 +1,13 @@
-import 'package:calculadora_imc/calculadora_imc.dart' as calculadora_imc;
+import "package:calculadora_imc/components/input_validations.dart";
+import 'package:calculadora_imc/classes/Pessoa.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${calculadora_imc.calculate()}!');
+  print('Iniciando a calculadora IMC...');
+  var nome = inputNome();
+  var peso = inputNumero(TipoNumero.peso);
+  var altura = inputNumero(TipoNumero.altura);
+
+  var pessoa = Pessoa(nome, peso, altura);
+  print(pessoa);
+
 }
