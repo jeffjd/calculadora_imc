@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class Pessoa {
   String _nome = "";
   double _peso = 0.0;
@@ -34,7 +36,7 @@ class Pessoa {
   }
 
   double calcularIMC() {
-    return (_peso / (_altura * 2));
+    return (_peso / pow(_altura, 2));
   }
 
   @override

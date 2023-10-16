@@ -28,7 +28,6 @@ String inputNome() {
   if (nome.toLowerCase() == "sair") {
     sairDoPrograma();
   }
-  print(nome);
   return nome;
 }
 
